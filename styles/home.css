@@ -4,7 +4,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-body{
+body {
     background: #f5f6fa;
 }
 
@@ -47,4 +47,22 @@ body{
     transition: margin-left 0.5s;
     padding: 16px;
     margin-left: 85px;
+}
+
+#btnSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px #111;
+    border-radius: 10px;
+    background: #111;
+    color: #f1f1f1;
+    font-size: 24px;
+    transition-duration: 0.4s;
+}
+
+#btnSubmit:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
 }
