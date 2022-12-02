@@ -1,8 +1,8 @@
 {
-  "name": "proyecto-redes",
+  "name": "login",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Proyecto de redes",
+  "main": "Validatelogin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint"
@@ -12,5 +12,19 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "8.26.0"
-  }
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "hbs": "^4.2.0",
+    "mysql": "^2.18.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgc1899/proyecto-redes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dgc1899/proyecto-redes/issues"
+  },
+  "homepage": "https://github.com/dgc1899/proyecto-redes#readme"
 }
