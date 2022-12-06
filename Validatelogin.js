@@ -1,7 +1,8 @@
-const mysql = require('mysql2');
+const mysql = require('mysql');
 const express = require('express');
 const session = require('express-session');
 const path = require('path');
+
 
 const connection = mysql.createConnection({
 	host     : '127.0.0.1',
@@ -65,6 +66,24 @@ app.get('/home', function(request, response) {
 		response.sendFile(path.join(__dirname + '/views/home.html'))
 	}
 	//response.end();
+});
+
+app.get('/homeq2', function(request, response) {
+	// If the user is loggedin
+	if (request.session.loggedin) {
+		// Render home
+		//response.sendFile(path.join(__dirname + '/views/home.html'));
+		response.sendFile(path.join(__dirname + '/views/homeq2.html'))
+	}
+});
+
+app.get('/homeq3', function(request, response) {
+	// If the user is loggedin
+	if (request.session.loggedin) {
+		// Render home
+		//response.sendFile(path.join(__dirname + '/views/home.html'));
+		response.sendFile(path.join(__dirname + '/views/homeq3.html'))
+	}
 });
 
 app.listen(3306);
