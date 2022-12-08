@@ -6,6 +6,11 @@
 body {
     background-color: #435165;
 }
+
+.content {
+    text-align: center;
+}
+
 .login {
     width: 400px;
     background-color: #ffffff;
